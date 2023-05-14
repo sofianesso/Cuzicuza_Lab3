@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuzicuza.Server", "Cuzicuza\Server\Cuzicuza.Server.csproj", "{8B1AA552-7C12-4FEC-AED6-D55BB0A17801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuzicuza.Server", "Cuzicuza\Server\Cuzicuza.Server.csproj", "{8B1AA552-7C12-4FEC-AED6-D55BB0A17801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuzicuza.Client", "Cuzicuza\Client\Cuzicuza.Client.csproj", "{07A2A016-A41E-4DA8-9F5F-277B9AD91FD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuzicuza.Client", "Cuzicuza\Client\Cuzicuza.Client.csproj", "{07A2A016-A41E-4DA8-9F5F-277B9AD91FD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuzicuza.Shared", "Cuzicuza\Shared\Cuzicuza.Shared.csproj", "{53CA4CB2-B16C-4797-9EF0-22F75343CB8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuzicuza.Shared", "Cuzicuza\Shared\Cuzicuza.Shared.csproj", "{53CA4CB2-B16C-4797-9EF0-22F75343CB8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

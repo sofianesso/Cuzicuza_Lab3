@@ -205,14 +205,14 @@
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
       "Cuzicuza.Shared.dll": "sha256-vgFM+r2JNK2RkkT0AiD0B1sR2mGPxc4BHk0AWXE89RY=",
-      "Cuzicuza.Client.dll": "sha256-Y33kShsneXxmOIZSixzAz5MOk7cATGx866zpgiVwuKg="
+      "Cuzicuza.Client.dll": "sha256-SDFK34oByj5ug+najq581J1z50CceMXwXtNHY64cyok="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Cuzicuza.Shared.pdb": "sha256-elSNkIQ0lRWfSUuu4ytoA8vZCCNDTCLyHXWyP56i5UE=",
-      "Cuzicuza.Client.pdb": "sha256-xqwPQTlBUcaTrs1Eil0prmVMV6LSOjnx3NYmrHAT6Ag="
+      "Cuzicuza.Client.pdb": "sha256-9mZB52zmcnmVsSTci\/jM8oo27x7B6PxbSFEfOaja3Ms="
     },
     "runtime": {
       "dotnet.7.0.5.wfzl7dr89j.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

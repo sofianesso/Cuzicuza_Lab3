@@ -1,0 +1,21 @@
+.footer[b-3lsra661tp] {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.footer .container[b-3lsra661tp] {
+    max-width: 960px;
+}
+
+.footer h5[b-3lsra661tp] {
+    margin-bottom: 15px;
+}
+
+.footer-link[b-3lsra661tp] {
+    color: #6c757d;
+    transition: color 0.5s ease;
+}
+
+.footer-link:hover[b-3lsra661tp] {
+    color: #343a40;
+}
