@@ -1,0 +1,20 @@
+.carousel[b-15e6g8yjca] {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.carousel-item[b-15e6g8yjca] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item.active[b-15e6g8yjca] {
+    opacity: 1;
+}

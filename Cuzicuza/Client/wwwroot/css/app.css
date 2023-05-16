@@ -17,14 +17,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    margin-top: 3rem;
+    font-weight: 700;
     font-family: 'Amatic SC', cursive;
 }
 
 p {
-    margin-top: 0;
+    margin-bottom: 0;
     margin-bottom: 1rem;
 }
 
@@ -42,6 +41,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
 
 }
 
@@ -127,3 +127,37 @@ a {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+
+
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.center-text {
+    font-size: 3em;
+    border-bottom: 1px solid black;
+}
+
+.card-title {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+
+.carousel-container {
+    margin-top: 50px; /* Ändra detta värde för att justera avståndet från toppen */
+}
+
+.carousel-inner img {
+    border: 5px solid #000; /* Ändra färg och bredd på ramen efter önskemål */
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+}
+
+
+.carousel-item {
+    width: 1200px; /* Ändra detta värde för att justera bredden på karusellen */
+    margin: auto;
+}

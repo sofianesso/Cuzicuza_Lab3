@@ -1,0 +1,64 @@
+﻿@page "/menu"
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager Navigation
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h2 class="center-text">Vår Meny</h2>
+
+            <div class="card-deck mt-5">
+                <div class="card">
+                    <img src="images/coffee.png" class="card-img-top" alt="Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaffe</h5>
+                        <p class="card-text">Njut av vårt utsökta kaffe, bryggt på färska bönor.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/pastry.png" class="card-img-top" alt="Pastry">
+                    <div class="card-body">
+                        <h5 class="card-title">Bakverk</h5>
+                        <p class="card-text">Prova våra hemgjorda bakverk, perfekt tillsammans med en kopp kaffe.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/sandwich.png" class="card-img-top" alt="Sandwich">
+                    <div class="card-body">
+                        <h5 class="card-title">Smörgåsar</h5>
+                        <p class="card-text">Våra smörgåsar är fyllda med färska och smakrika ingredienser.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Specialerbjudande!</h5>
+                    <p class="card-text">
+                        <AuthorizeView>
+                            <Authorized>
+                                Tack för att du loggat in, @context.User.Identity?.Name! Kom ihåg att du får en gratis kaffe vid ditt nästa besök.
+                            </Authorized>
+                            <NotAuthorized>
+                                Logga in med ditt Microsoft-konto och få en gratis kaffe vid ditt nästa besök!
+                                <button class="btn btn-light" @onclick="BeginLogin">Logga in</button>
+                            </NotAuthorized>
+                        </AuthorizeView>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public void BeginLogin()
+    {
+        Navigation.NavigateTo("authentication/login");
+    }
+}

@@ -21,14 +21,6 @@
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
       "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
@@ -71,6 +63,30 @@
     {
       "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\images\\coffee.png",
+      "PackagePath": "staticwebassets\\images\\coffee.png"
+    },
+    {
+      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\images\\image1.jpg",
+      "PackagePath": "staticwebassets\\images\\image1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\images\\image2.jpg",
+      "PackagePath": "staticwebassets\\images\\image2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\images\\image3.jpg",
+      "PackagePath": "staticwebassets\\images\\image3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\images\\pastry.png",
+      "PackagePath": "staticwebassets\\images\\pastry.png"
+    },
+    {
+      "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\images\\sandwich.png",
+      "PackagePath": "staticwebassets\\images\\sandwich.png"
     },
     {
       "Id": "C:\\Users\\Soffe\\source\\repos\\Cuzicuza\\Cuzicuza\\Client\\wwwroot\\index.html",
