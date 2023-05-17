@@ -1,5 +1,62 @@
-﻿<h3>Booking</h3>
+﻿@page "/booking"
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+@using System.Text.Json
+
+
+<div class="container mt-5">
+    <h2 class="text-center">Boka bord</h2>
+
+    <div class="booking-form">
+        <div class="form-group">
+            <label for="name">Namn:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-post:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Datum:</label>
+            <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Tid:</label>
+            <input type="time" class="form-control" id="time" required>
+        </div>
+        <div class="form-group">
+            <label for="partySize">Antal personer:</label>
+            <input type="number" class="form-control" id="partySize" min="1" required>
+        </div>
+        <button type="submit" class="btn btn-primary" @onclick="Book">Boka</button>
+    </div>
+</div>
 
 @code {
+    private async Task Book()
+    {
+        var name = (await JSRuntime.InvokeAsync<string>("eval", "document.getElementById('name').value")).Trim();
+        var email = (await JSRuntime.InvokeAsync<string>("eval", "document.getElementById('email').value")).Trim();
+        var date = (await JSRuntime.InvokeAsync<string>("eval", "document.getElementById('date').value")).Trim();
+        var time = (await JSRuntime.InvokeAsync<string>("eval", "document.getElementById('time').value")).Trim();
+        var partySize = (await JSRuntime.InvokeAsync<string>("eval", "document.getElementById('partySize').value")).Trim();
 
+        var booking = new
+        {
+            Name = name,
+            Email = email,
+            Date = date,
+            Time = time,
+            PartySize = partySize
+        };
+
+        var bookingsJson = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "bookings");
+        var bookings = string.IsNullOrEmpty(bookingsJson) ? new List<object>() : JsonSerializer.Deserialize<List<object>>(bookingsJson);
+        bookings.Add(booking);
+
+        var bookingsJsonUpdated = JsonSerializer.Serialize(bookings);
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "bookings", bookingsJsonUpdated);
+
+        Navigation.NavigateTo("/booking-confirmation");
+    }
 }

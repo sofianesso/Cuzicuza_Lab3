@@ -3,16 +3,20 @@
 @inject NavigationManager Navigation
 
 <AuthorizeView>
-    <Authorized>
-        Hello, @context.User.Identity?.Name!
-        <button class="nav-link btn btn-link" @onclick="BeginLogOut">Log out</button>
+    <Authorized Context="context">
+        @{
+            var fullName = context.User.Identity?.Name;
+            var firstName = fullName?.Split(' ')[0];
+        }
+        <span class="greeting">Hej, @firstName!</span>
+        <a class="logout-link" @onclick="BeginLogOut">Logga ut</a>
     </Authorized>
     <NotAuthorized>
-        <a href="authentication/login">Log in</a>
+        <a href="authentication/login">Logga in</a>
     </NotAuthorized>
 </AuthorizeView>
 
-@code{
+@code {
     public void BeginLogOut()
     {
         Navigation.NavigateToLogout("authentication/logout");

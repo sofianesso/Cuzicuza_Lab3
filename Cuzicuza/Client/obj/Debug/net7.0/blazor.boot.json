@@ -237,15 +237,15 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "Cuzicuza.Shared.dll": "sha256-B8kPbNB2XC9ivouei8qz+Kru9WqwlHstcieQKa04GH8=",
-      "Cuzicuza.Client.dll": "sha256-j4zZN41+ot07qrv8vc96ZSpzGYDDzFEEKvTIdAvRcto="
+      "Cuzicuza.Shared.dll": "sha256-lCxduzu5T7DrMYF4mWOGCGxl3Mbe\/x7EErw02jK+HGw=",
+      "Cuzicuza.Client.dll": "sha256-JQRLZSoepoVch9n0kMTvILkvPeQGvHo2f\/g5xWEXHFg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Cuzicuza.Shared.pdb": "sha256-anV9q8kgVQKw3pvoLVpArbhQnToGXfSbyeOA+C+8ZJ0=",
-      "Cuzicuza.Client.pdb": "sha256-QQ6EHmA0Rlo8awBRSeNMYGNd5bSeGbmHor\/tFxBvx5w="
+      "Cuzicuza.Shared.pdb": "sha256-aT381B4Ht6zvWeEJCoaoLspeU5iqcvM53O06y0H1iQw=",
+      "Cuzicuza.Client.pdb": "sha256-\/x0D0WlgOTMWCp0x7PQPFgBPleG90HodQlrSbwhyFv8="
     },
     "runtime": {
       "dotnet.7.0.5.wfzl7dr89j.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

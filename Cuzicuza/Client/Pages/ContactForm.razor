@@ -4,12 +4,13 @@
 
 <style>
     .contact-form {
-        max-width: 400px;
+        max-width: 450px;
         margin: auto;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
         background-color: #f2f2f2;
+        margin-top: 50px;
     }
 
         .contact-form h3 {
@@ -32,40 +33,53 @@
             border: none;
             cursor: pointer;
         }
+
+    .thank-you-message {
+        margin-top: 10px;
+        font-weight: bold;
+        color: black;
+    }
 </style>
 
 <div class="contact-form">
-    <h3>Contact us</h3>
+    <h3>Kontakta oss</h3>
+
+    @if (showThankYouMessage)
+    {
+        <p class="thank-you-message">Tack för ditt meddelande! <br> Vi kommer att höra av oss inom 24h 😊</p>
+    }
 
     <EditForm Model="@contact" OnValidSubmit="@HandleValidSubmit">
         <DataAnnotationsValidator />
         <ValidationSummary />
 
         <div class="form-group">
-            <label for="name">Your Name</label>
+            <label for="name">Namn</label>
             <InputText id="name" @bind-Value="@contact.Name" />
         </div>
 
         <div class="form-group">
-            <label for="email">Your Email</label>
+            <label for="email">E-post</label>
             <InputText id="email" @bind-Value="@contact.Email" />
         </div>
 
         <div class="form-group">
-            <label for="message">Your Message</label>
+            <label for="message">Ditt meddelande</label>
             <InputTextArea id="message" @bind-Value="@contact.Message" />
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Skicka</button>
     </EditForm>
 </div>
 
 @code {
     private ContactDto contact = new ContactDto();
+    private bool showThankYouMessage = false;
 
     private async Task HandleValidSubmit()
     {
         await AnonymousHttp.PostAsJsonAsync("api/contact", contact);
         contact = new ContactDto();
+        showThankYouMessage = true;
     }
 }

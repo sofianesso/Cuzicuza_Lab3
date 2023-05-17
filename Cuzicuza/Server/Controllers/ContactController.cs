@@ -32,8 +32,12 @@ namespace Cuzicuza.Server.Controllers
 
             _context.Contacts.Add(contact);
             await _context.SaveChangesAsync();
+            var response = new
+            {
+                Message = "Tack för ditt meddelande! Vi återkommer inom 24h."
+            };
 
-            return Ok();
+            return Ok(response);
         }
     }
 }

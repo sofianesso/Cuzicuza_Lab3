@@ -49,11 +49,11 @@ a {
     color: #343a40;
     font-family: 'Amatic SC', cursive;
     font-size: 3em;
-    margin-right: 90px;
+    margin-right: 200px;
 }
 
 .nav-link {
-    margin-right: 40px;
+    margin-right: 50px;
     color: #495057;
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
@@ -74,8 +74,10 @@ a {
 
 /* Navigation Menu */
 
+/*---------------------------------------------------------------------------------------------------------*/
 
 
+/* Error & Loading */
 
 #blazor-error-ui {
     background: lightyellow;
@@ -128,7 +130,11 @@ a {
         content: var(--blazor-load-percentage-text, "Loading");
     }
 
+/* Error & Loading */
 
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Menyn kusin */
 .card-img-top {
     height: 15rem;
     object-fit: cover;
@@ -144,20 +150,111 @@ a {
     font-weight: 400;
 }
 
-
-.carousel-container {
-    margin-top: 50px; /* Ändra detta värde för att justera avståndet från toppen */
+.menu-item {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.carousel-inner img {
-    border: 5px solid #000; /* Ändra färg och bredd på ramen efter önskemål */
-    height: 300px;
-    object-fit: cover;
-    margin: auto;
+    .menu-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+.special-offer {
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
 }
 
+    .special-offer:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
 
-.carousel-item {
-    width: 1200px; /* Ändra detta värde för att justera bredden på karusellen */
+/* Menyn kusin */
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* Logga ut */
+.logout-button {
+    color: #495057;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 10px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid #495057; /* Lägger till en gräns */
+    border-radius: 5px; /* Gör gränsen rundad */
+}
+
+    .logout-button:hover {
+        color: #6c757d;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+
+    .logout-link:hover {
+        color: #6c757d;
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+.greeting {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Logga ut */
+
+/*---------------------------------------------------------------------------------------*/
+
+/* Bokning */
+.booking-form {
+    max-width: 400px;
     margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+    .booking-form label {
+        font-weight: bold;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="email"],
+    .booking-form input[type="date"],
+    .booking-form input[type="time"],
+    .booking-form input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .booking-form button[type="submit"] {
+        display: block
+    }
+/* Bokning */
+
+/*---------------------------------------------------------------------------------------*/
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+
+.content {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
